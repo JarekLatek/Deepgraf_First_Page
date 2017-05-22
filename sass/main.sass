@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans')
+@import url('https://fonts.googleapis.com/css?family=Martel:900')
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+
+* 
+	box-sizing: border-box
+	/*border: 1px solid #000;*/
+
+body 
+	margin: 0
+	font-family: 'Open Sans', sans-serif
+
+/*HEADER & NAV*/
+
+header 
+	nav
+		.brand-img
+			padding: 10px 15px
+
+/*HERO*/
+
+.hero 
+	background: url(images/main.jpg) center/cover
+	height: 100vh
+	padding-top: 40vh
+	.slogan 
+		background: rgba(0, 0, 0, 0.5)
+		float: right
+		max-width: 70vh
+		h1 
+			color: #fff
+			text-align: left
+			padding: 20px 100px 20px 50px
+			text-transform: uppercase
+			span
+				font-weight: bold
+
+/*PROFITS*/
+
+section
+	.container 
+		padding: 50px 30px
+		text-align: center
+
+.profits
+	.fa 
+		font-size: 90px
+		background-color: #313332
+		width: 150px
+		height: 150px
+		border-radius: 15px
+		display: flex
+		justify-content: center
+		align-items: center
+		margin: 0 auto
+	.fa-cubes 
+		color: #fff
+	.fa-code 
+		color: #fff
+	.fa-cogs 
+		color: #fff
+	h1 
+		font-size: 40px
+		margin-bottom: 0
+		text-transform: uppercase
+	p 
+		margin-top: 0
+
+
+/*SECTION FEATURED WORKS*/
+
+.featured-works
+	text-align: center
+	padding: 50px 0
+	h1 
+		font-size: 55px
+		margin-bottom: 0
+		text-transform: uppercase
+	p 
+		margin-top: 0
+
+/*GALLERY*/
+
+[class*="picture-"] 
+	padding: 0
+	margin: 0
+	height: 20vw
+	cursor: pointer
+	text-align: center
+
+.picture-1 
+	background: url('images/pic_1.jpg') center/cover
+
+.picture-2 
+	background: url('images/pic_2.jpg') center/cover
+
+.picture-3 
+	background: url('images/pic_3.jpg') center/cover
+
+.picture-4 
+	background: url('images/pic_4.jpg') center/cover
+
+.picture-5 
+	background: url('images/pic_5.jpg') center/cover
+
+.picture-6 
+	background: url('images/pic_6.jpg') center/cover
+
+.picture-7 
+	background: url('images/pic_7.jpg') center/cover
+
+.picture-8 
+	background: url('images/pic_8.jpg') center/cover
+
+.gallery
+	.fa 
+		color: #fff
+		font-size: 45px
+		height: 65px
+		width: 65px
+		border-radius: 5px
+		opacity: 0
+		line-height: 20vw
+		transition: 1s
+	i 
+		margin: 0 20px
+	.layer 
+		background-color: rgba(49, 51, 50, 0.5)
+		height: 20vw
+		opacity: 0
+		transition: 1s
+
+/*PERSONEL*/
+
+.personel
+	img 
+		border-radius: 50%
+		width: 10vw
+		height: 10vw
+		box-shadow: 2px 2px 8px #313332
+	.layer-2 
+		background-color: rgba(49, 51, 50, 0.5)
+		height: 10vw
+		width: 10vw
+		left: 0
+		right: 0
+		margin: auto
+		border-radius: 50%
+		position: absolute
+		display: flex
+		justify-content: center
+		align-items: center
+		opacity: 0
+		color: #fff
+		font-size: 25px
+		p
+			font-size: 15px
+	h3 
+		display: none
+		color: #ccc
+
+/*PROMOTION*/
+
+.promotion 
+	background-color: #ccc
+	h2 
+		font-size: 45px
+		text-align: left
+	p
+		text-align: left
+	img 
+		width: 280px
+		margin-bottom: 0
+		padding-bottom: 0
+	.promo-padding 
+		padding-bottom: 0
+
+/*STATS*/
+
+.stats 
+	font-family: 'Martel', serif
+	text-transform: uppercase
+	h1 
+		font-size: 65px
+		padding: 0
+		margin: 0
+	p 
+		color: #00c7e8
+		padding: 0
+		margin: 0
+
+/*FOOTER*/
+
+footer 
+	background-color: #313332
+	color: #fff
+	padding-top: 20px
+	button 
+		outline: none
+	.fa 
+		width: 50px
+		height: 50px
+		border: 0
+		font-size: 25px
+		border-radius: 4px
+		margin: 0 2px
+		text-align: center
+		background-color: #00c7e8
+		color: #fff
+		
+	.copy 
+		background-color: #000
+		color: #ccc
+		text-align: center
+		width: 100%
+		padding: 20px 0
+		margin-top: 20px
+		p
+			margin-bottom: 0
+	h4 
+		font-weight: bold
+	.contact 
+		padding-top: 0
+		padding-bottom: 0
+		padding-left: 0
+		margin-top: 0
+		margin-bottom: 0
+	hr 
+		display: none
+
+/*MEDIA QUERIES*/
+
+@media (min-width: 970px) 
+	/*PROFITS*/
+	
+	.profits
+		.fa
+			&:hover 
+				background-color: #00c7e8
+				transition: 1s
+	
+	/*GALLERY*/
+	
+	.gallery
+		.effect
+			&:hover
+				.fa 
+					opacity: 1
+				.layer 
+					opacity: 1				
+	
+	/*PERSONEL*/
+	
+	.personel
+		.effect
+			&:hover
+				.layer-2 
+					transition: 1s
+					opacity: 1
+
+	/*FOOTER*/
+	
+	footer
+		.fa
+			&:hover 
+				background-color: #fff
+				color: #00c7e8
+				transform: scale(1.05)
+				cursor: pointer
+				transition: 1s
+
+@media (max-width: 969px) 
+	/*HERO*/
+	
+	.slogan
+		h1 
+			padding: 20px 50px 20px 50px
+			font-size: 25px
+	
+	/*PROFITS*/
+	
+	.profits
+		.fa 
+			background-color: #00c7e8
+		h1 
+			font-size: 25px
+		p
+			margin-bottom: 35px
+	
+	/*FEATURED WORKS*/
+	
+	.featured-works
+		h1 
+			font-size: 35px	
+	
+	/*GALLERY*/
+	
+	[class*="picture-"] 
+		padding: 0
+		margin: 0
+		height: 50vw
+		cursor: pointer
+		text-align: center
+
+	.gallery
+		.fa 
+			color: #fff
+			font-size: 30px
+			border-radius: 5px
+			padding: 3vw
+			opacity: 1
+			background-color: rgba(49, 51, 50, 0.5)
+			display: inline
+		.layer 
+			background-color: transparent
+			opacity: 1
+	
+	/*PERSONEL*/
+	
+	.personel
+		img 
+			border-radius: 50%
+			width: 50vw
+			height: 50vw
+			float: none
+			box-shadow: 2px 2px 8px #313332
+		h1
+			font-size: 25px
+		h3 
+			display: block
+			color: #ccc
+			font-size: 15px
+			margin-top: 5px
+			margin-bottom: 35px
+	
+	/*POMOTION*/
+	
+	.promotion 	
+		img 
+			width: 80vw
+			margin: 0
+			padding: 0
+		h2 
+			font-size: 25px
+			text-align: center
+		p
+			text-align: center
+			padding-bottom: 50px
+
+	/*STATS*/
+	
+	.stats
+		p
+			margin-bottom: 20px
+
+	/*FOOTER*/
+	
+	footer 
+		text-align: center
+		padding-top: 20px
+		.fa 
+			margin: 15px	
+		.contact 
+			padding: 0
+			margin: 0
+		hr 
+			display: block
+			opacity: .5
+			width: 50vw
+			
+@media (max-width: 767px)
+	.hero
+		.slogan
+			h1 
+				padding: 20px
+				font-size: 15px
